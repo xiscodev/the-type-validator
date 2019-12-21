@@ -1,6 +1,6 @@
 {
   "name": "the-type-validator",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A type validator for node or browser",
   "main": "./dist/main.js",
   "scripts": {

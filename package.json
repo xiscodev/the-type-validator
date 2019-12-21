@@ -23,7 +23,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/deepertech-com/the-browser-logger.git"
+    "url": "git://github.com/deepertech-com/the-type-validator.git"
   },
   "engines": {
     "node": ">= 6.8.0"

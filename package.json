@@ -1,15 +1,12 @@
 {
   "name": "the-type-validator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A type validator for node or browser",
-  "main": "./dist/main.js",
-  "scripts": {
-    "prebuild": "npm run clean",
-    "build": "webpack --config webpack.config.js",
-    "build:dev": "NODE_ENV=development npm run build",
-    "build:prod": "NODE_ENV=production npm run build",
-    "clean": "rimraf dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "author": "José Diaz <info@josediaz.site> (https://josediaz.site)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/deepertech-com/the-type-validator.git"
   },
   "keywords": [
     "javascript",
@@ -19,14 +16,17 @@
     "validate",
     "validator"
   ],
-  "author": "José Diaz <info@josediaz.site> (https://josediaz.site)",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/deepertech-com/the-type-validator.git"
-  },
   "engines": {
     "node": ">= 6.8.0"
+  },
+  "main": "dist/main.js",
+  "scripts": {
+    "prebuild": "npm run clean",
+    "build": "webpack --config webpack.config.js",
+    "build:dev": "NODE_ENV=development npm run build",
+    "build:prod": "NODE_ENV=production npm run build",
+    "clean": "rimraf dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "eslint": "^6.8.0",

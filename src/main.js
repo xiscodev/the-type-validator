@@ -1,7 +1,7 @@
 import { isNull, isUndefined, isFunction, isString } from 'type/primitive'
 import { isNumber, isInteger, isFloat } from 'type/number'
 import { isArray, isEmptyArray } from 'type/array'
-import { isObject, isEmptyObject } from 'type/object'
+import { isObject, isPlainObject, isEmptyObject } from 'type/object'
 import { isPromise } from 'type/promise'
 
 const isEmpty = (data) => {
@@ -18,6 +18,7 @@ exports.isFloat = isFloat
 exports.isArray = isArray
 exports.isEmptyArray = isEmptyArray
 exports.isObject = isObject
+exports.isPlainObject = isPlainObject
 exports.isEmptyObject = isEmptyObject
 exports.isPromise = isPromise
 exports.isEmpty = isEmpty

@@ -1,19 +1,9 @@
-import { isFunction, isNull } from 'type/primitive'
-import { isArray } from 'type/array'
-
 const isObject = (value) => {
-  return typeof value === 'object' && !isNull(value) && !isFunction(value) && !isArray(value)
-}
-
-const _getTag = (value) => {
-  if (value === null) {
-    return value === undefined ? '[object Undefined]' : '[object Null]'
-  }
-  return toString.call(value)
+  return typeof value === 'object' && toString.call(value) === '[object Object]'
 }
 
 const isPlainObject = (value) => {
-  if (!isObject(value) || _getTag(value) !== '[object Object]') {
+  if (!isObject(value)) {
     return false
   }
   if (Object.getPrototypeOf(value) === null) {
@@ -28,7 +18,6 @@ const isPlainObject = (value) => {
 
 const isEmptyObject = (data) => {
   let empty = null
-
   if (isObject(data)) {
     for (const key in data) {
       // eslint-disable-next-line no-prototype-builtins

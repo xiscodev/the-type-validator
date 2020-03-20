@@ -1,9 +1,9 @@
-const isSafe = (data) => {
+const _isSafe = (data) => {
   return Number.isSafeInteger(data) && data < Number.MAX_VALUE && data > Number.MIN_VALUE
 }
 
 const isNumber = (data) => {
-  return typeof data === 'number' && !isNaN(data) && data === Number(data) && isSafe(data)
+  return typeof data === 'number' && !isNaN(data) && data === Number(data) && _isSafe(data)
 }
 
 const isInteger = (data) => {
@@ -16,7 +16,6 @@ const isFloat = (data) => {
 }
 
 export {
-  isSafe,
   isNumber,
   isInteger,
   isFloat

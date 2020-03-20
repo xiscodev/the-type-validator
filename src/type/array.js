@@ -1,5 +1,5 @@
 const isArray = (data) => {
-  return Array.isArray(data)
+  return Array.isArray(data) && toString.call(data) === '[object Array]'
 }
 
 const isEmptyArray = (data) => {

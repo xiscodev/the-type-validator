@@ -8,6 +8,10 @@ const isEmpty = (data) => {
   return isEmptyArray(data) || isEmptyObject(data)
 }
 
+const getType = (data) => {
+  return toString.call(data).replace('[object ', '').replace(']', '')
+}
+
 exports.isNull = isNull
 exports.isUndefined = isUndefined
 exports.isFunction = isFunction
@@ -22,3 +26,4 @@ exports.isPlainObject = isPlainObject
 exports.isEmptyObject = isEmptyObject
 exports.isPromise = isPromise
 exports.isEmpty = isEmpty
+exports.getType = getType

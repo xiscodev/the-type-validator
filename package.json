@@ -30,7 +30,7 @@
     "predocs": "npm run test:cover",
     "docs": "documentation readme src/** --section=JSDOC",
     "docs:watch": "npm run docs -- --watch",
-    "test": "jest --verbose --runInBand --passWithNoTests",
+    "test": "jest --verbose --runInBand",
     "test:watch": "npm run test -- --watch",
     "test:watch-all": "npm run test -- --watchAll",
     "test:cover": "npm run test -- --coverage"

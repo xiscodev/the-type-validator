@@ -1,4 +1,4 @@
-import { isNull } from 'type/primitive'
+import { isNull } from './primitive'
 
 /**
  * @access public

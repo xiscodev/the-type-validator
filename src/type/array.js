@@ -2,8 +2,8 @@
  * @access public
  * @function isArray
  * @description Checks if data is an array.
- * @param {any} data
- * @returns {boolean}
+ * @param {any} data the data to check
+ * @returns {boolean} true or false wheter data is an array or not
  */
 const isArray = (data) => {
   return Array.isArray(data) && toString.call(data) === '[object Array]'
@@ -13,8 +13,8 @@ const isArray = (data) => {
  * @access public
  * @function isEmptyArray
  * @description Checks if data is an empty array.
- * @param {any} data
- * @returns {boolean}
+ * @param {any} data the data to check
+ * @returns {boolean} true or false wheter data is an empty array or not
  */
 const isEmptyArray = (data) => {
   return isArray(data) && data.length === 0
@@ -22,5 +22,5 @@ const isEmptyArray = (data) => {
 
 export {
   isArray,
-  isEmptyArray
+  isEmptyArray,
 }

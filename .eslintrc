@@ -9,11 +9,13 @@
   "plugins": [
     "import",
     "jest",
+    "jsdoc",
     "node",
     "promise",
-    "jsdoc"
+    "standard"
   ],
   "extends": [
+    "standard",
     "eslint:recommended",
     "plugin:jsdoc/recommended"
   ],

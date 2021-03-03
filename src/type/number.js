@@ -46,7 +46,7 @@ const isInteger = (data) => {
  * @returns {boolean} true or false wheter data is Float or not
  */
 const isFloat = (data) => {
-  return isNumber(data) && (data % 1 !== 0 || _dotZeroFloatNumberPattern.test(data) )
+  return isNumber(data) && (data % 1 !== 0 || _dotZeroFloatNumberPattern.test(data))
 }
 
 export {

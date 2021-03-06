@@ -193,13 +193,13 @@ false
 
 ##### Table of Contents
 
--   [isEmpty](#isempty)
-    -   [Parameters](#parameters)
--   [getType](#gettype)
-    -   [Parameters](#parameters-1)
 -   [isArray](#isarray)
-    -   [Parameters](#parameters-2)
+    -   [Parameters](#parameters)
 -   [isEmptyArray](#isemptyarray)
+    -   [Parameters](#parameters-1)
+-   [isEmpty](#isempty)
+    -   [Parameters](#parameters-2)
+-   [getType](#gettype)
     -   [Parameters](#parameters-3)
 -   [isNumber](#isnumber)
     -   [Parameters](#parameters-4)
@@ -224,26 +224,6 @@ false
 -   [isPromise](#ispromise)
     -   [Parameters](#parameters-14)
 
-#### isEmpty
-
-Checks if data is empty, whether is an array or an object.
-
-##### Parameters
-
--   `data` **any** the data to check
-
-Returns **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** true or false wheter data is an empty objct or empty array
-
-#### getType
-
-Gets data type.
-
-##### Parameters
-
--   `data` **any** the data to check
-
-Returns **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** the type to return
-
 #### isArray
 
 Checks if data is an array.
@@ -263,6 +243,26 @@ Checks if data is an empty array.
 -   `data` **any** the data to check
 
 Returns **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** true or false wheter data is an empty array or not
+
+#### isEmpty
+
+Checks if data is empty, whether is an array or an object.
+
+##### Parameters
+
+-   `data` **any** the data to check
+
+Returns **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** true or false wheter data is an empty objct or empty array
+
+#### getType
+
+Gets data type.
+
+##### Parameters
+
+-   `data` **any** the data to check
+
+Returns **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** the type to return
 
 #### isNumber
 

@@ -18,11 +18,14 @@ const config = {
   resolve: {
     extensions: ['.js'],
     modules: [SRC_DIR, NODE_DIR],
+    alias: {
+      type: `${SRC_DIR}/type`,
+    },
   },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.js$/i,
         exclude: [
           /node_modules/,
           /\.spec\.js/,
@@ -44,5 +47,8 @@ if (!isDev) {
     })],
   }
 }
+
+console.log('NODE_ENV', process.env.NODE_ENV)
+console.log('devtool', config.devtool)
 
 module.exports = config

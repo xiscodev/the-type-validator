@@ -53,5 +53,6 @@
     "import/resolver": {"node": {"path": ["src"] }},
     "import/extensions": [".js"],
     "import/ignore": ["node_modules"]
-  }
+  },
+  "ignorePatterns": "*.spec.js"
 }

@@ -3,28 +3,7 @@ import { isNumber, isInteger, isFloat } from 'type/number'
 import { isArray, isEmptyArray } from 'type/array'
 import { isObject, isPlainObject, isEmptyObject } from 'type/object'
 import { isPromise } from 'type/promise'
-
-/**
- * @access public
- * @function isEmpty
- * @description Checks if data is empty, whether is an array or an object.
- * @param {any} data
- * @returns {boolean}
- */
-const isEmpty = (data) => {
-  return isEmptyArray(data) || isEmptyObject(data)
-}
-
-/**
- * @access public
- * @function getType
- * @description Gets data type.
- * @param {any} data
- * @returns {string}
- */
-const getType = (data) => {
-  return toString.call(data).replace('[object ', '').replace(']', '')
-}
+import { isEmpty, getType } from 'type/helper'
 
 exports.isNull = isNull
 exports.isUndefined = isUndefined

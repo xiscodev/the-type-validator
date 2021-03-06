@@ -1,6 +1,6 @@
 {
   "name": "the-type-validator",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A type validator for node or browser",
   "author": "José Diaz <contact@xisco.dev> (https://xisco.dev)",
   "license": "MIT",

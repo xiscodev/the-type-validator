@@ -2,8 +2,8 @@
  * @access public
  * @function isPromise
  * @description Checks if data is a promise.
- * @param {any} data
- * @returns {boolean}
+ * @param {any} data the data to check
+ * @returns {boolean} true or false wheter data is Promise or not
  */
 const isPromise = (data) => {
   return !!(data &&
@@ -13,5 +13,5 @@ const isPromise = (data) => {
 }
 
 export {
-  isPromise
+  isPromise,
 }

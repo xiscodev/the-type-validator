@@ -1,11 +1,11 @@
-import { isNull } from 'type/primitive'
+import { isNull } from './primitive'
 
 /**
  * @access public
  * @function isObject
  * @description Checks if data is an object.
- * @param {any} data
- * @returns {boolean}
+ * @param {any} data the data to check
+ * @returns {boolean} true or false wheter data is Object or not
  */
 const isObject = (data) => {
   return typeof data === 'object' && toString.call(data) === '[object Object]'
@@ -16,8 +16,8 @@ const isObject = (data) => {
  * @function isPlainObject
  * @description Checks if data is a plain object. Borrowing definition as stands in
  * https://stackoverflow.com/questions/51722354/the-implementation-of-isplainobject-function-in-redux
- * @param {any} data
- * @returns {boolean}
+ * @param {any} data the data to check
+ * @returns {boolean} true or false wheter data is Plain Object or not
  */
 const isPlainObject = (data) => {
   if (!isObject(data)) {
@@ -32,11 +32,11 @@ const isPlainObject = (data) => {
  * @access public
  * @function isEmptyObject
  * @description Checks if data is an empty object.
- * @param {any} data
- * @returns {boolean}
+ * @param {any} data the data to check
+ * @returns {boolean} true or false wheter data is Empty Object or not
  */
 const isEmptyObject = (data) => {
-  let empty = null
+  let empty = true
   if (isObject(data)) {
     for (const key in data) {
       // eslint-disable-next-line no-prototype-builtins
@@ -44,7 +44,6 @@ const isEmptyObject = (data) => {
         empty = false
       }
     }
-    empty = true
   }
   return empty
 }
@@ -52,5 +51,5 @@ const isEmptyObject = (data) => {
 export {
   isObject,
   isPlainObject,
-  isEmptyObject
+  isEmptyObject,
 }
